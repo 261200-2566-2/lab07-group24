@@ -43,7 +43,7 @@ public class Lab07 {
         System.out.println();
 
         // Contains After removed
-        System.out.println("Contains All set2 after removed (set1 ⊇ set2): " + set1.containsAll(set2));
+        System.out.println("Contains All set2 to set1 after removed (set1 ⊇ set2): " + set1.containsAll(set2));
         System.out.println();
         // Testing contains after removed
         System.out.println("Contains 2: " + set1.contains(2));
@@ -56,10 +56,18 @@ public class Lab07 {
         System.out.println("Elements in the set after removal: " + Arrays.toString(set1.toArray()));
         System.out.println();
 
+        System.out.println("RetainAll set1 of set2 (set1 ∩ set2): " + set1.retainAll(set2));
+        System.out.println("Size Set1: " + set1.size() + " : "+ Arrays.toString(set1.toArray()));
+        System.out.println("Size Set2: " + set2.size() + " : "+ Arrays.toString(set2.toArray()));
+        System.out.println();
+
+
         // Clearing the set
         set1.clear();
         System.out.println("Size of the set after clearing: " + set1.size());
         System.out.println("Is the set empty? " + set1.isEmpty());
+        System.out.println("Size Set1: " + set1.size() + " : "+ Arrays.toString(set1.toArray()));
+        System.out.println("Size Set2: " + set2.size() + " : "+ Arrays.toString(set2.toArray()));
         System.out.println();
 
         // In lecture slide
