@@ -48,7 +48,7 @@ public class HashSet<E> implements Set<E> {
 
     @Override
     public boolean remove(Object o) {
-        return map.remove(o) != null;
+        return map.remove(o) == newObject;
     }
 
     @Override
